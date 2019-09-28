@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Zafar Iqbal Books</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="communicate">Communicate</string>
+    <string name="all_books">All Books</string>
+    <string name="science_fiction">Science Fiction</string>
+    <string name="math_and_science">Math and Science</string>
+    <string name="stories">Stories</string>
+    <string name="others">Others</string>
+    <string name="auto_biography">Auto Biography</string>
+
+    <array name="category">
+        <item>সায়েন্স ফিকশন</item>
+        <item>ম্যাথ অ্যান্ড সায়েন্স</item>
+        <item>স্তোরিস (Stories)</item>
+        <item>অটো বায়োগ্রাফি</item>
+        <item>আদারস বই</item>
+    </array>
+    <array name="ScienceFictionList">
+        <item>সায়েন্স ফিকশন সমগ্র পার্ট ১</item>
+        <item>সায়েন্স ফিকশন সমগ্র পার্ট ২</item>
+        <item>সায়েন্স ফিকশন সমগ্র পার্ট ৩</item>
+        <item>সায়েন্স ফিকশন সমগ্র পার্ট ৪</item>
+        <item>সায়েন্স ফিকশন সমগ্র পার্ট ৫</item>
+        <item>আমরা ও ক্রাব নেবুলা</item>
+        <item>এনিমান</item>
+        <item>ব্লাক হোলের বাচ্চা</item>
+        <item>আইনস্তাইন</item>
+        <item>সেরিনা</item>
+    </array>
+    <array name="mathscience">
+        <item>একটু খানি বিজ্ঞান</item>
+        <item>আরও একটু খানি বিজ্ঞান</item>
+        <item>নিউরনে অনুরণন</item>
+        <item>নিউরনে আবার ও  অনুরণন</item>
+        <item>বিজ্ঞানের একশো মজার খেলা</item>
+        <item>দেখা আলোর না দেখা রূপ</item>
+        <item>গণিতের মজা মজার গণিত</item>
+        <item>কোয়ান্টাম মেকানিক্স</item>
+        <item>থিওরী অফ রিলেটিভি</item>
+    </array>
+    <array name="autobiography">
+        <item>রঙ্গিন চশমা</item>
+    </array>
+    <array name="others">
+        <item>আধুনিক ইশপের গল্প</item>
+        <item>আমার বড় ভাই হুমাউন আহমেদ</item>
+        <item>আমেরিকা</item>
+        <item>দানব</item>
+        <item>দেশের বাইরে দেশ</item>
+        <item>একটা ভুতের গল্প</item>
+        <item>পিশাচিনী</item>
+        <item>প্রেত</item>
+        <item>Six Interesting Incidents</item>
+    </array>
+    <array name="stories">
+        <item>টুনটুনি ছোট চাচ্চু</item>
+        <item>আরও টুনটুনি ও আরও ছোট চাচ্চু</item>
+        <item>আধ ডজন স্কুল</item>
+        <item>আমার বন্ধু রাশেদ</item>
+        <item>আমি তপু </item>
+        <item>বাচ্চা ভয়ংকর কাচ্চা ভয়ংকর</item>
+        <item>বকুল আপু</item>
+        <item>বৃষ্টির ঠিকানা</item>
+        <item>বুবুনের বাবা</item>
+        <item>ছেলে মানুসী</item>
+        <item>দিপু #২</item>
+        <item>দলের নাম ব্লাক ড্রাগন</item>
+        <item>দুষ্টু দুষ্টু ছেলের দল </item>
+        <item>গাব্বু</item>
+        <item>গ্রামের নাম কাকন ডুবি</item>
+        <item>হাত কাটা রবিন</item>
+        <item>ইশ্তেশন</item>
+        <item>জারুল চৌধুরী মানিকযোর</item>
+        <item>কাবিল কহকাফি</item>
+        <item>কাজলের দিন রাত্রি</item>
+        <item>লাবু এলো শহরে</item>
+        <item>লিতু বৃত্তান্ত</item>
+        <item>মেয়েটির নাম নারিনা</item>
+        <item>মেকু কাহিনী</item>
+        <item>নিতু আর তার বান্ধবীরা</item>
+        <item>নাট বলটু</item>
+        <item>রাজু ও আগুনালির ভুত</item>
+        <item>রাশা</item>
+        <item>রাতুলের রাত রাতুলের দিন</item>
+        <item>রূপ রূপালী</item>
+        <item>স্কুলের নাম পথচারি</item>
+        <item>শান্তা পরিবার</item>
+        <item>তিন্নি ও বন্না</item>
+        <item>টি রেক্স এর সন্ধানে</item>
+    </array>
+</resources>

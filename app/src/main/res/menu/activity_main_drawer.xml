@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="@string/all_books" />
+        <item
+            android:id="@+id/nav_science_fiction"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="@string/science_fiction" />
+        <item
+            android:id="@+id/nav_math_and_science"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="@string/math_and_science" />
+        <item
+            android:id="@+id/nav_stories"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="@string/stories" />
+        <item
+            android:id="@+id/nav_auto_biography"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="@string/auto_biography" />
+        <item
+            android:id="@+id/nav_others"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="@string/others" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>
