@@ -1,5 +1,7 @@
 package com.mezan.zafariqbalbooks;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -42,8 +44,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                SendEmail();
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -95,20 +96,37 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_all) {
             mainListView();
         } else if (id == R.id.nav_science_fiction) {
-            ScienceFictionView();
+            //ScienceFictionView();
+            startActivity(new Intent(MainActivity.this,ScienceFictionView.class));
+
+
         } else if (id == R.id.nav_math_and_science) {
-                MathAndScienceView();
+              //  MathAndScienceView();
+            startActivity(new Intent(MainActivity.this,Math_And_Science_View.class));
+
         } else if (id == R.id.nav_stories) {
-            StoriesView();
+            //  StoriesView();
+            startActivity(new Intent(MainActivity.this,StoriesView.class));
+
+
         }else if (id == R.id.nav_auto_biography) {
-            AutoBiographyView();
+          //  AutoBiographyView();
+            startActivity(new Intent(MainActivity.this,Auto_Biography_View.class));
+
         }else if (id == R.id.nav_others) {
-            OthersView();
+           // OthersView();
+            startActivity(new Intent(MainActivity.this,Others_View.class));
         }
         else if (id == R.id.nav_share) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT,
+                    "Hey check out my app at: https://www.apkmirror.com/");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
         } else if (id == R.id.nav_send) {
-
+                SendEmail();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -125,52 +143,33 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i == 0){
-                    ScienceFictionView();
+                    //ScienceFictionView();
+                    startActivity(new Intent(MainActivity.this,ScienceFictionView.class));
                 }else if (i == 1){
-                    MathAndScienceView();
+                   // MathAndScienceView();
+                    startActivity(new Intent(MainActivity.this,Math_And_Science_View.class));
                 }else if (i == 2){
-                    StoriesView();
+                   // StoriesView();
+                    startActivity(new Intent(MainActivity.this,StoriesView.class));
                 }else if(i == 3){
-                    AutoBiographyView();
+                    //AutoBiographyView();
+                    startActivity(new Intent(MainActivity.this,Auto_Biography_View.class));
                 }else if (i == 4){
-                    OthersView();
-                }else {
-                    /*Do Nothing*/
+                    //OthersView();
+                    startActivity(new Intent(MainActivity.this,Others_View.class));
                 }
             }
         });
 
     }
-    private void ScienceFictionView(){
-      ListView  main_list = findViewById(R.id.book_list);
-        categoryName = getResources().getStringArray(R.array.ScienceFictionList);
-        adapter = new ListAdapter(categoryName, this);
-        main_list.setAdapter(adapter);
+    private void SendEmail(){
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto","mrmezan06@gmail.com", null));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Tell me about the application");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "");
+        startActivity(Intent.createChooser(emailIntent, "Send email..."));
     }
-    private void MathAndScienceView(){
-       ListView main_list = findViewById(R.id.book_list);
-        categoryName = getResources().getStringArray(R.array.mathscience);
-        adapter = new ListAdapter(categoryName, this);
-        main_list.setAdapter(adapter);
-    }
-    private void StoriesView(){
-       ListView main_list = findViewById(R.id.book_list);
-        categoryName = getResources().getStringArray(R.array.stories);
-        adapter = new ListAdapter(categoryName, this);
-        main_list.setAdapter(adapter);
-    }
-    private void AutoBiographyView(){
-      ListView  main_list = findViewById(R.id.book_list);
-        categoryName = getResources().getStringArray(R.array.autobiography);
-        adapter = new ListAdapter(categoryName, this);
-        main_list.setAdapter(adapter);
-    }
-    private void OthersView(){
-       ListView main_list = findViewById(R.id.book_list);
-        categoryName = getResources().getStringArray(R.array.others);
-        adapter = new ListAdapter(categoryName, this);
-        main_list.setAdapter(adapter);
-    }
+
 
 
 }
